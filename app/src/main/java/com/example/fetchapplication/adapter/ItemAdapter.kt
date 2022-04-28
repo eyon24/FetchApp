@@ -10,10 +10,21 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fetchapplication.R
 import com.example.fetchapplication.data.myDataItem
 
+/** Adapts our data to fit our RecyclerView
+ *  @param context
+ *  @param dataset - a list containing our data
+ *
+ *  @return RecyclerView.Adapter<ItemAdapter.ItemViewHolder>()
+ * */
 class ItemAdapter(private val context: Context,
                   private val dataset: List<myDataItem>
                   ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
+    /** Class that sets our item's data to the views
+     *
+     *  @param view - the view where we will display our data
+     *  @return RecyclerView.ViewHolder(view)
+     * */
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val textViewListId: TextView = view.findViewById(R.id.item_listId)
         val textViewName: TextView = view.findViewById(R.id.item_name)
@@ -28,7 +39,7 @@ class ItemAdapter(private val context: Context,
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val resources = context?.resources
+        val resources = context.resources
         val item = dataset[position]
 
         holder.textViewListId.text = resources?.getString(R.string.listId, item.listId.toString())
