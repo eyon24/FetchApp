@@ -14,7 +14,7 @@ The app is scrollable so the user can access each item that is passed to the vie
 
 Import the project into Android Studio and run the application on a device
 or
-install directly on android device from app/build/intermediates/apk/debug/app-debug.apk
+install directly on android device from app-debug.apk
 
 ## Notes
 
