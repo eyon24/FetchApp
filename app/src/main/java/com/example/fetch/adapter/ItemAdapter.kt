@@ -1,14 +1,13 @@
-package com.example.fetchapplication.adapter
+package com.example.fetch.adapter
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fetchapplication.R
-import com.example.fetchapplication.data.myDataItem
+import com.example.fetch.R
+import com.example.fetch.data.myDataItem
 
 /** Adapts our data to fit our RecyclerView
  *  @param context

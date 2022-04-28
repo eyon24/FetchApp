@@ -1,9 +1,8 @@
-package com.example.fetchapplication.api
+package com.example.fetch.api
 
-import com.example.fetchapplication.data.myDataItem
+import com.example.fetch.data.myDataItem
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Query
 
 interface ApiInterface {
 
